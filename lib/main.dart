@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:refresh_indicator/homepage.dart';
 
-void main() => runApp(
-  MaterialApp(
-  title: "Refresh Indicator",
-  home: MyHomePage(),
-)
-);
+void main() => runApp(new MyApp());
+
+class MyApp extends StatelessWidget {
+   @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      home: new MyHomePage(),
+    );
+  }
+} 
+ 
 
  
